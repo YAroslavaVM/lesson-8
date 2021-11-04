@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400&display=swap');
+
+body{
+    font-family: 'Roboto Slab', sans-serif;
+    background-color: rgb(204, 203, 203);
+    color: black;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1330px;
+    margin: 0 auto;
+    padding: 50px 15px;
+}
+
+h1{
+    margin-bottom: 15px;
+    font-size: 36px;
+    text-align: center;
+}
+
+li{
+    color: #fff;
+    padding: 15px 0;
+}
+
+span{
+    color: #fff;
+    font-size: 24px;
+    
+}
+
+span:hover{
+    font-size: 28px;
+}
+
+.fa-icon{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    background-color: rgb(33, 27, 116);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 10px 0 10px 30px;
+    transition: width 3s;
+}
+
+.fa-icon:hover{
+    width: 100%;
+}
+
+.animateon-block{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: rgb(33, 27, 116);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 10px 0 10px 30px;
+}
+
+.block{
+    width: 200px;
+    height: 200px;
+    opacity: .5;
+    margin: 5px;
+    background-color: rgb(190, 190, 190);
+    animation: skew 3s infinite;
+    transform: skew(30deg);
+    animation-duration: alternate;
+    opacity: .7;
+}
+
+@keyframes skew{
+    0%{
+        transform: skewX(35deg)
+    }
+    100%{
+        transform: skewX(-35deg)
+    }
+}
+
+.background-img{
+    width: 100%;
+    height: 35ch;
+    background: url("../Lesson8/imeges/beckraund-img.png");
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.biocl-imege{
+    text-align: center;
+    height: 100%;
+}
+
+.biocl-imege img{
+    max-width: 100%;
+}
+
+.universes-inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.information-inner{
+    display: flex;
+    justify-content: space-around;
+}
+
+.six-picture{
+    height: 200px;
+    width: 400px;
+}
+
+.content{
+    margin: 5px 20px;
+}
+
+h3{
+    margin: 0 0 20px 0;
+}
+
+
+
+
